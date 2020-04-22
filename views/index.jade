@@ -1,5 +1,42 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .ui.one.column.stackable.center.aligned.page.grid.margin-30
+    .column.twelve.wide
+      .ui.stacked.segment.gameArea
+        .circle.blue(style='left:150px; top:100px')
+          .relative
+            span.name Burkay
+            .message Selam
+        .circle.green(style='left:300px; top:100px')
+          .relative
+            span.name Elif
+          .message selam nasılsın :)
+        .circle.red(style='left:350px; top:300px')
+          .relative
+            span.name Aycan
+          .message this is awesome
+    .ui.items.chat
+      .item
+        .content
+          a.header.name Burkay
+          .description.message
+            | Selam
+      .item
+        .content
+          a.header.name Elif
+          .description.message
+            |  ben çok güzelim!
+      .item
+        .content
+          a.header.name Aycan
+          .description.message
+            |   yeter eliff
+      .item
+        .content
+          a.header.name Azer
+          .description.message
+            |   Başaramadım
+    .ui.action.input.fluid
+      input(type='text', placeholder='Type here...')
+      button.ui.button Send
